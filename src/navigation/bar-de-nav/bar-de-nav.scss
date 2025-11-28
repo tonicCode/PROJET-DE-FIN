@@ -1,0 +1,42 @@
+
+.header{ 
+
+    display: flex;
+    justify-content: space-between;
+    top:0;
+background-color: rgb(127, 229, 255);
+
+border: solid black 2px;
+height: 30px;
+padding: 5px;
+
+}
+
+.navbar {
+    display: flex;
+    margin-left: auto;
+    gap: 10px;
+    margin-right: 10px;
+   
+}
+
+
+.onglet{
+
+
+ border:1px solid black;
+ display: flex;
+ align-items: center;
+
+}
+
+.onglet:hover{
+
+background-color: aliceblue;
+
+
+}
+
+
+
+
