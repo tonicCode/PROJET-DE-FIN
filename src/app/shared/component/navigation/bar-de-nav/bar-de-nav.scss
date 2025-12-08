@@ -1,0 +1,73 @@
+
+.header{ 
+
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+
+// background-color: rgb(127, 229, 255);
+
+// border: 2px solid blue;
+ height: 120px;
+// padding: 5px;
+
+}
+
+.navbar {
+    display: flex;
+    // border: 1px solid red;
+    height: 30px;
+    
+    // margin-left: auto;
+    // gap: 10px;
+    // margin-right: 10px;
+    
+   
+}
+
+
+
+input{
+
+    width:200px;
+height:30px;
+
+background-color: rgb(127, 229, 255);
+border: none;
+
+
+
+}
+
+
+
+
+
+
+.navbar2{
+  display: flex;
+  flex-direction: column;
+    // border: 1px solid red;
+    height: 90px;
+ width:200px;
+// height:200px;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

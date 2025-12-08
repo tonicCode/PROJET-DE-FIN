@@ -1,0 +1,50 @@
+
+
+
+
+
+
+<header class="header">
+
+    <nav class="navbar">
+<input  type="button"value="ESPACE INVITER" menuTag #mt="menuTag">
+
+  
+
+<input type="button" value="ESPACE MEMBRES" >
+
+
+
+
+</nav>
+
+    @if(mt.newIsHover||isHoverExoOnglet){ 
+<nav class="navbar2">
+
+<input type="button" value="exercice 1" (mouseenter)="onMouseEnter($event)"(mouseleave)="onMouseLeave($event)" (click)="launchExo()">
+<input type="button" value="exercice 2" (mouseenter)="onMouseEnter($event)"(mouseleave)="onMouseLeave($event)">
+<input type="button" value="exercice 3" (mouseenter)="onMouseEnter($event)"(mouseleave)="onMouseLeave($event)">
+
+</nav>
+}
+
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

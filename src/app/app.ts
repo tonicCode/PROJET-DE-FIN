@@ -1,10 +1,13 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { BarDeNav } from "../navigation/bar-de-nav/bar-de-nav";
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { BarDeNav } from "./shared/component/navigation/bar-de-nav/bar-de-nav";
+import { ExoComponent } from "./shared/component/exo-component/exo-component";
+import { ContactComposant } from './shared/component/contact-composant/contact-composant';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone:true,
+  imports: [RouterOutlet,BarDeNav],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
