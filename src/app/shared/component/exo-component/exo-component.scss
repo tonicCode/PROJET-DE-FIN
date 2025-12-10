@@ -1,8 +1,44 @@
 section{
-    color:white;
+    display: flex;
+    height:25%;
+    flex-direction: column;
+
+     justify-content: center;
+    border: 1px solid white;
+
+}
+
+
+
+h1{
+    display: flex;
+    justify-content: center;
+    color: blue;
+
+     width:200px;
+     margin: 0 auto;
+    // border: 1px solid white;
+}
+
+#ZoneDeTexte{
+// display: flex;
+
+//  height: 200px;
+margin: 0 auto;
+
+ width: 200px;
+
+}
+
+input{
+height: 50px;
+
+
 }
 
 
 p{
+
+ margin:0 auto;
     color: blue;
 }

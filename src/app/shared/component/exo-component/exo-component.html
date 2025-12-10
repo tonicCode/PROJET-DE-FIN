@@ -1,100 +1,27 @@
 
 
 
-<section >
-
-
- <!-- @if(axl.isLinkExoClicked){  -->
-
-
-<h1>hello exo</h1>
+<section id="containerExo1">
 
 
 
 
+<h1>exercice 1</h1>
+<p>ecrit le texte sans article definis le, la ,les ..</p>
 
-
-
-
-
-
-    
-<!-- <div id="containerExo" >
-
-@if(exoId==1){
-<div >
-
-
-  
-
-<p>{{writeExo()}}</p>
-
-
-<div id="dialogueExo">
-<h1>{{dialogue()}}</h1>
-
-
-
-
-</div>
-
-
-<select [value]="selectedValue" id="niveau"(change)="onChange($event)">
-
-
-<option value="facile">facile</option>
-<option value="moyen">moyen</option>
-<option value="difficile">difficile</option>
-
+<select name="" id="selecteurNiveau"(change)="onchange($event)">
+    <option value="facile">facile</option>
+    <option value="moyen">medium</option>
+    <option value="difficile">hard</option>
 </select>
 
-<br>
-
-<textarea name="" id=""></textarea>
-
-
-
-</div>
-
-
-}
-
-
-<!-- exo 2 -->
-
-
-<!-- @if(exoId==2){
-
-
-<h1>{{writeExo()}}</h1>
-
-
-}
-
-
-
-<!-- exo 3 -->
-
-<!-- 
-@if(exoId==3){
-
-
-<h1>{{writeExo()}}</h1>
-
-
-}
+<textarea id="ZoneDeTexte"></textarea>
+<input type="button" value="verifier"(click)="analyse()">
 
 
 
 
 
-
-
-
-
-
-
-</div>   -->
 </section>
 
 

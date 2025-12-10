@@ -1,0 +1,44 @@
+
+
+
+
+
+
+
+#formu{
+display: flex;
+ justify-content:center;
+ flex-direction: column;
+ margin: 0 auto;
+
+border:1px solid white;
+width: 200px;
+height: 100px;
+
+}
+
+
+label{
+color:rebeccapurple;
+
+
+}
+
+
+input{
+display: flex;
+margin: 0 auto;
+
+}
+
+
+button{
+display: flex;
+
+    background-color: red;
+    margin: 0 auto;
+}
+
+
+
+

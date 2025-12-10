@@ -1,0 +1,44 @@
+
+#FormuInscription{
+display: flex;
+
+margin:0 auto;
+flex-direction: column;
+justify-content: center;
+
+border:1px solid white;
+//  margin: 0 auto;
+
+width: 200px;
+height: 25%;
+
+
+}
+
+
+input{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+
+
+button{
+    display: flex;
+margin: 0 auto;
+    background-color: red;
+
+
+
+}
+
+label{
+
+color: blueviolet;
+
+}
+
+
+
+

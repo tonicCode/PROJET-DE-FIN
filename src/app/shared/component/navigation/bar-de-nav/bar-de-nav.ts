@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 //import { MenuDerouleDirect } from "../../../directives/menu-deroule-direct";
 //import { NgIf } from "../../../../../../node_modules/@angular/common/types/_common_module-chunk";
 import { MenuDerouleDirect } from '../../../directives/menu-deroule-direct';
-import { ExoLink } from "../../../directives/exo-link";
+import { ExoLink } from "../../../directives/exo-difficult";
 import { RouterLink,Router } from "@angular/router";
 import { ContactComposant } from '../../contact-composant/contact-composant';
 import { ServiceEcriture } from '../../../services/service-ecriture';
@@ -64,6 +64,26 @@ console.log("this clic !!!!");
 }
 
 
+
+// login 
+
+launchLogin():void{
+
+
+// const eleClick=ev.target as HTMLInputElement;
+this.router.navigate(['home/login']);
+
+}
+
+
+// inscription 
+
+launchInscription():void{
+
+this.router.navigate(['home/inscription']);
+
+
+}
 
 
 
