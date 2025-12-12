@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Bll.Services
 {
-    internal interface IUserService 
+    public interface IUserService 
     {
 
         void post(UsersModel uM);

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Bll.Services;
+
 using Models;
 
 namespace MonApi.Controllers
@@ -11,23 +12,25 @@ namespace MonApi.Controllers
     {
 
 
-       private readonly IUserService _userSeervice;
+       private readonly IUserService _userService;
 
+        public usersController(IUserService userService)
+        {
+            _userService = userService;
+        }
 
-
-       
         [HttpPost]
 
 
-        public IEnumerable<UsersModel> post()
+        public IActionResult post([FromBody] UsersModel um)
         {
 
+            _userService.post(um);
 
 
 
 
-
-            return Ok();
+            return Ok(um);
         }
     }
 }

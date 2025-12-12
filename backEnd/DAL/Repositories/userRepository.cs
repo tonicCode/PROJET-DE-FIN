@@ -19,13 +19,13 @@ namespace Dal.Repositories
         {
 
 
-            using(SqlConnection connect=new SqlConnection(_dataString))
+            using(SqlConnection connection=new SqlConnection(_dataString))
             {
 
-                using (SqlCommand cmd = new SqlCommand("toPost", connect))
+                using (SqlCommand cmd = new SqlCommand("toPost", connection))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
-                    connect.Open();
+                    connection.Open();
                     cmd.ExecuteNonQuery();
 
 
