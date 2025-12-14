@@ -3,24 +3,24 @@
 <section id="FormuInscription">
 
 
-<form action="">
+<form [formGroup]="form" (ngSubmit)="submitData()" id="Formul"name="formulaireInscript">
 
 
 
-    <label for="username">username:</label>
-    <input type="username"  id="username">
+    <label for="us">username:</label>
+    <input type="text"formControlName="username"id="us"  >
 
 
-    <label for="password">choisissez votre password:</label>
-    <input type="password"  id="password">
+    <label for="pw">choisissez votre password:</label>
+    <input type="text" formControlName="password"id="pw" >
 
-<label for="email">email:</label>
-    <input type="email" name="" id="email">
+<label for="em">email:</label>
+    <input type="text" formControlName="email"id="em">
 
 
 
-<label for="date de naissance">date de naissance :</label>
-    <input type="date de naissance" name="" id="date de naissance">
+<label for="bd">date de naissance :</label>
+    <input type="text" formControlName="birthDate"id="bd">
 
 <button type="submit"value="envoyer">envoyer</button>
 
@@ -32,9 +32,15 @@
 
 
 
+
+
 </section>
 
 
+<section id="MessageInscrit">
+<h1 >@if(isRegister){Welcome {{UserActuallyRegistered}}  you are registered thank you   }@else{ Inscrivez-vous }   </h1>
 
+
+</section>
 
 

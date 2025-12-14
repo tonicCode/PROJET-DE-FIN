@@ -3,6 +3,11 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 import { BarDeNav } from "./shared/component/navigation/bar-de-nav/bar-de-nav";
 import { ExoComponent } from "./shared/component/exo-component/exo-component";
 import { ContactComposant } from './shared/component/contact-composant/contact-composant';
+import { HttpClient,HttpParams } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
+
 
 @Component({
   selector: 'app-root',
