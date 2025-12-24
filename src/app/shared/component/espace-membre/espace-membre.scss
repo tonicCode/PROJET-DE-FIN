@@ -1,0 +1,47 @@
+
+p{
+    color:red;
+    font-size: small;
+}
+
+
+
+#cercleStatus{
+display: flex;
+color:navy;
+margin:0 auto;
+justify-content: end;
+
+        border:1px solid blue;
+        background-color: greenyellow;
+        width:10px;
+        height:10px;
+border-radius: 50%;
+
+
+}
+
+
+#UserConnect{
+display: flex;
+justify-content: center;
+flex-direction: row;
+border: 1px solid white;
+height: 100px;
+
+
+
+
+}
+
+
+.containerUser{
+display: flex;
+
+    border:1px solid white;
+    width:100px;
+    height:100px;
+
+
+
+}

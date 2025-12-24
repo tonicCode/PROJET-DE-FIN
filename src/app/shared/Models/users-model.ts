@@ -1,5 +1,5 @@
 export interface UsersModel {
-//  User_id?:number;
+ user_id :number;
 userName : string;
 passWord:string ;
 email:string;

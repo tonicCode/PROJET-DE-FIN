@@ -5,6 +5,7 @@ import { ExoComponent } from './shared/component/exo-component/exo-component';
 import { ContactComposant } from './shared/component/contact-composant/contact-composant';
 import { LoginComposant } from './shared/component/login-composant/login-composant';
 import { InscriptionComposant } from './shared/component/inscription-composant/inscription-composant';
+import { EspaceMembre } from './shared/component/espace-membre/espace-membre';
 
 
 export const routes: Routes = [
@@ -14,8 +15,8 @@ export const routes: Routes = [
 {path:'home/exo',component:ExoComponent},
 {path:'home/contact', component:ContactComposant},
 {path:'home/login',component:LoginComposant},
-{path:'home/inscription',component:InscriptionComposant}
-
+{path:'home/inscription',component:InscriptionComposant},
+{path:'home/espaceMembre',component:EspaceMembre}
 
 
 

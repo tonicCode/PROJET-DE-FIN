@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal, Signal } from '@angular/core';
 import { ApiService } from '../../services/api-service';
 import { ServiceEcriture } from '../../services/service-ecriture';
 import { CommonModule } from '@angular/common';
@@ -23,13 +23,15 @@ emailValue:string="";
 birthDateValue:string="";
  form!: FormGroup;
  isRegister:boolean=false;
- UserActuallyRegistered:string="";
+
+
+ UserActuallyRegistered = signal("");
 
 
 
 
 
-constructor(private apiService : ApiService,private injectServiceEcriture : ServiceEcriture,private fb:FormBuilder){}
+constructor(private apiService : ApiService, private injectServiceEcriture : ServiceEcriture,private fb:FormBuilder){}
 
 
 //initialisation du formulaire d 'inscription 
@@ -53,8 +55,8 @@ async submitData(){
 
 if(this.form.valid){
 
- this.injectServiceEcriture.addDataForm(this.form.get('username')?.value,this.form.get('password')?.value,this.form.get('email')?.value,this.form.get('birthDate')?.value);
-
+ this.injectServiceEcriture.addDataForm(this.form.value);
+console.log('voici la valu' , this.form.value);
 
 
 }else{
@@ -70,9 +72,11 @@ try{
   const send=await firstValueFrom( this.apiService.createPost(this.injectServiceEcriture.getAllUsersData()));
   console.log('les data sont ',send);
 
-this.isRegister=this.injectServiceEcriture.registerSucces();
 
-this.UserActuallyRegistered=this.form.get('username')?.value;
+  // info de la personne inscrite
+// this.isRegister=this.injectServiceEcriture.registerSucces();
+
+this.UserActuallyRegistered.set(this.form.get('username')?.value);
 
 
 }catch(error){

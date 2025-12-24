@@ -1,0 +1,53 @@
+<p>Membre connecter</p>
+
+
+
+<section id="UserConnect">
+ @for(item of recupTabAllUser();track item){
+
+
+<div class="containerUser">
+   <p>status user :</p>    
+  
+
+
+ 
+    
+        
+    <p>{{item.user_id +" "+ item.userName}}</p>
+
+    @for(rtu of  recupTabUser();track rtu){
+ @if(UserIsBeenLogin && rtu ){
+
+
+
+
+
+@if(recupTabUser()[indexId].userName === item.userName){
+  
+
+  
+
+
+    
+ <p>{{rtu.userName}}</p>
+
+  <div id="cercleStatus"> </div>
+}
+
+}
+
+     }
+
+
+ 
+</div>
+
+ }
+
+
+
+    
+
+
+</section>

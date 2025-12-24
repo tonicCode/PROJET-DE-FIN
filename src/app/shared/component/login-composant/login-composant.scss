@@ -5,7 +5,7 @@
 
 
 
-#formu{
+#loginFormu{
 display: flex;
  justify-content:center;
  flex-direction: column;
@@ -18,8 +18,17 @@ height: 100px;
 }
 
 
+
+
+
+
 label{
+    display: flex;
+    justify-content: center;
+    margin:0 auto;
+
 color:rebeccapurple;
+// border:1px solid white;
 
 
 }

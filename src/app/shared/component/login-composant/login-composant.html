@@ -1,14 +1,15 @@
 
 
 <section >
-<form id="formu">
+<form [formGroup]="loginFormu" (ngSubmit)="tologin()">
 
-<label for="username">username :  </label>
-<input type="text" name="" id=""required>
+<label for="userName">username : </label>
+
+<input type="text" formControlName="userName">
 
 
-<label for="password">password :  </label>
-<input type="password" name="" id=""required>
+<label for="passWord">password :  </label>
+<input type="text" formControlName="passWord">
 <button type="submit">confirmer</button>
 
 
